@@ -1,0 +1,9 @@
+<article class="escritor">
+	<img class="escritor__img" src="{{persona.imagen}}" alt="Foto de {{persona.nombre}} {{persona.apellidos}}">
+	<div class="escritor__informacion">
+		<h2 class="informacion__nombre">{{persona.nombre}} {{persona.apellidos}}</h2>
+		<h3 class="informacion__pais">{{persona.pais}}</h3>
+		<button class="informacion__btn" routerLink="/escritores">Regresar</button>
+		<router-outlet></router-outlet>
+	</div>
+</article>

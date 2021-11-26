@@ -1,0 +1,65 @@
+:host(.columns-12) {
+	grid-column: 2 / 12;
+}
+
+.nav-filtro {
+	display: flex;
+	justify-content: center;
+	margin: 1.5rem 0;
+	width: 100%;
+}
+
+.nav-filtro__paises {
+	border: 1px solid #8685EF;
+	color: #4A4857;
+	padding: .5rem;
+	width: 300px;
+}
+
+.nav-filtro__paises:focus-visible {
+	outline: none;
+}
+
+.escritores {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2rem 0;
+	gap: 1rem;
+}
+
+.escritores__escritor {
+	background-color: #FAF8FF;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12),
+				0 3px 3px rgba(0, 0, 0, 0.16);
+	padding: 1rem;
+	width: 250px;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+	transition-property: box-shadow, transform;
+}
+
+.escritores__escritor:hover {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18),
+	0 3px 6px rgba(0, 0, 0, 0.2);
+	transform: scale(1.01);
+}
+
+.escritor__nombre {
+	border-bottom: 2px solid #8685EF;
+	color: #333333;
+	font-size: 1.6rem;
+	margin: 1rem 0 1.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.escritor__pais {
+	text-transform: capitalize;
+	color: #4A4857;
+}
+
+.escritor__img {
+	max-height: 250px;
+	border-radius: 5px;
+}

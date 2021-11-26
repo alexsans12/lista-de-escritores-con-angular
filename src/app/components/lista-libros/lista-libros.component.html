@@ -1,0 +1,6 @@
+<aside class="libros">
+	<article class="libro" *ngFor="let libro of libros">
+		<img class="libro__img" src="{{libro.imagen}}" alt="{{libro.titulo}}">
+		<p class="libro__titulo">{{libro.titulo}} <span>Año de Publicación: {{libro.publicado}}</span></p>
+	</article>
+</aside>

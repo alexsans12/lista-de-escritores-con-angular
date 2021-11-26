@@ -1,0 +1,16 @@
+<nav class="nav-filtro">
+	<select class="nav-filtro__paises" (change)="selecionarPais($event)">
+		<option value="{{null}}">Todos</option>
+		<option value="españa">España</option>
+		<option value="reino unido">Reino Unido</option>
+		<option value="chile">Chile</option>
+		<option value="canadá">Canada</option>
+	</select>
+</nav>
+<section class="escritores">
+	<article class="escritores__escritor" *ngFor="let escritor of escritores" [routerLink]="['/escritores', escritor.id, 'libros']">
+		<h2 class="escritor__nombre">{{escritor.nombre}} {{escritor.apellidos}}</h2>
+		<img class="escritor__img" src="{{escritor.imagen}}" alt="Foto de {{escritor.nombre}} {{escritor.apellidos}}">
+		<p class="escritor__pais">{{escritor.pais}}</p>
+	</article>
+</section>

@@ -1,0 +1,55 @@
+:host(.columns-12) {
+	grid-column: 2 / 12;
+}
+
+.escritor {
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 650px;
+	gap: 2rem;
+	margin: 3rem 0;
+	position: relative;
+}
+
+.escritor__img {
+	width: 240px;
+}
+
+.escritor__informacion {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.informacion__nombre {
+	margin: 0;
+	font-size: 2.2rem;
+	color: #333333;
+}
+
+.informacion__pais {
+	margin: 0.5rem 0;
+	font-size: 1.2rem;
+	color: #4A4857;
+	text-transform: capitalize;
+}
+
+.informacion__btn {
+	position: absolute;
+	top: 3%;
+	left: 130%;
+	background-color: #ffffff;
+	color: #8685EF;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	border: 1px solid #8685EF;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s linear;
+	transition-property: background-color, color;
+}
+
+.escritor__btn:hover {
+	background-color: #8685EF;
+	color: #fff;
+}

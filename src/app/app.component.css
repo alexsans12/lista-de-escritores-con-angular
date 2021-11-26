@@ -1,0 +1,18 @@
+.header {
+	width: 100%;
+	background-color: #8685EF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__title {
+	color: #FAF8FF;
+	font-size: 2em;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
